@@ -1,0 +1,129 @@
+:root {
+    --text: #2d2d2d;
+    --gradient-bg: #f6f8fb;
+    --primary:#0046be;
+    --accent:#6c757d;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text);
+}
+
+header {
+    background: var(--gradient-bg);
+    padding: 80px 20px;
+    text-align: center;    
+}
+
+header p {
+    margin: 10px 10px ;
+    margin-bottom: 30px;
+
+}
+
+header img {
+    width: 260px;
+    height: 120px;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    animation: bounce 2s;
+}
+
+@keyframes bounce{
+    40% {
+        translateY(-30px)
+    }
+    60% {
+        translateY(-10px)
+    }
+}
+
+section {
+    padding: 50px 20px;    
+    margin: auto;
+    text-align: center;
+}
+
+section p {
+    color: var(--accent);
+}
+
+
+.btn-primary:hover {
+    background: #00a6ff;
+}
+
+.steps {
+    display: grid;    
+    text-align: center;
+    padding: 20px;
+    margin: 20px;    
+}
+
+.step {
+    display: grid;      
+}
+
+.step i {
+    color: var(--primary);
+    font-size: 40px;
+}
+
+.reviews {       
+    border-top: 1px dashed gray;
+}
+
+.reviews h4 {
+    color: var(--primary);
+}
+
+.review {
+    background: var(--gradient-bg);
+    padding: 30px 20px;
+    border-radius: 12px;
+    margin: 10px;
+}
+
+.review-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minimax (200px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.cta {
+    background-color: var(--gradient-bg);
+    text-align: center;    
+    padding: 60px 50px;
+}
+
+.cta h2 {
+    margin-bottom: 10px;
+}
+
+.cta p {
+    margin: 20px 20px ;
+}
+
+footer {
+    background: var(--primary);
+    text-align: center;
+    color: white ;
+    padding: 20px;
+}
+
